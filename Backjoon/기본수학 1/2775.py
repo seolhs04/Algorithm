@@ -39,14 +39,7 @@ def main():
             
         result.append(arr[k][n-1])
     
-    for i in result:
-        print(i)
-    
-
-def cal(floor,room):
-    if(floor==0): return room
-    elif(room==1): return 1
-    else: return cal(floor-1, room)+cal(floor, room-1)
+    print(*result,sep='\n')
 
             
 main()
